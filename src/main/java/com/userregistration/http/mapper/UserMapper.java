@@ -4,10 +4,6 @@ import com.userregistration.http.dto.request.UserRequest;
 import com.userregistration.http.dto.response.UserResponse;
 import com.userregistration.model.UserModel;
 import org.springframework.stereotype.Component;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-import static java.util.Objects.isNull;
 
 @Component
 public class UserMapper {
@@ -29,17 +25,6 @@ public class UserMapper {
                 .login(userModel.getLogin())
                 .password(userModel.getPassword())
                 .build();
-    }
-
-    public static List<UserResponse> toResponseList(List<UserModel> userModelList) {
-        if (isNull(userModelList) || userModelList.isEmpty()) {
-            return new ArrayList<>();
-        } else {
-            return userModelList
-                    .stream()
-                    .map(UserMapper::toResponse)
-                    .collect(Collectors.toList());
-        }
     }
 
 }
