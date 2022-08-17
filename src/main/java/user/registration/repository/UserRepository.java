@@ -10,6 +10,6 @@ public interface UserRepository extends JpaRepository<UserModel, UUID> {
 
     UserModel findByLoginAndPassword(String login, String password);
 
-    UserModel findByName(String name);
+    UserModel findByLogin(String login);
 
 }

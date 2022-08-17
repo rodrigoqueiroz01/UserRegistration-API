@@ -17,8 +17,8 @@ public class UserService {
     private final UserRepository userRepository;
 
     public UserModel registerUser(UserModel userModel) {
-        if (!Objects.isNull(userRepository.findByName(userModel.getName()))) {
-            throw new DataAlreadyRegisteredException("Já existe usuário com esse nome!");
+        if (!Objects.isNull(userRepository.findByLogin(userModel.getLogin()))) {
+            throw new DataAlreadyRegisteredException("Já existe usuário com esse login!");
         }
 
         return userRepository.save(userModel);

@@ -2,7 +2,7 @@
 
 ## API voltada para cadastro e login de um usuário.
 
-### Técnologias utilizadas
+### Tecnologias utilizadas
 #### - Java 18
 #### - Spring Boot
 #### - MySql
@@ -10,4 +10,5 @@
 #### - Maven
 #### - Tomcat
 #### - Swagger UI
+#### - Postman (Collection)
 #### - IntelliJ IDEA
