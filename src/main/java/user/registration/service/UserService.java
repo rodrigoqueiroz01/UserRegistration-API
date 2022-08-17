@@ -1,13 +1,14 @@
-package com.userregistration.service;
+package user.registration.service;
 
-import com.userregistration.exception.DataAlreadyRegisteredException;
-import com.userregistration.http.dto.response.UserResponse;
-import com.userregistration.model.UserModel;
-import com.userregistration.repository.UserRepository;
+import user.registration.exception.DataAlreadyRegisteredException;
+import user.registration.http.dto.response.UserResponse;
+import user.registration.model.UserModel;
+import user.registration.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
 import java.util.Objects;
 
 @Service

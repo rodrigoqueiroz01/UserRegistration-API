@@ -1,29 +1,20 @@
-package com.userregistration.model;
+package user.registration.http.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.*;
 import java.util.UUID;
 
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "user", schema = "user")
-public class UserModel {
+public class UserResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-
     private String name;
-
-    @Column(unique = true)
     private String login;
-
     private String password;
 
 }

@@ -1,4 +1,4 @@
-package com.userregistration.http.dto.request;
+package user.registration.http.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;

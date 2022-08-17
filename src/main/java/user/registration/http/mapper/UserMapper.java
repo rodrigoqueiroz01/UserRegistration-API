@@ -1,8 +1,8 @@
-package com.userregistration.http.mapper;
+package user.registration.http.mapper;
 
-import com.userregistration.http.dto.request.UserRequest;
-import com.userregistration.http.dto.response.UserResponse;
-import com.userregistration.model.UserModel;
+import user.registration.http.dto.request.UserRequest;
+import user.registration.http.dto.response.UserResponse;
+import user.registration.model.UserModel;
 import org.springframework.stereotype.Component;
 
 @Component

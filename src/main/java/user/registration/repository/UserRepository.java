@@ -1,6 +1,6 @@
-package com.userregistration.repository;
+package user.registration.repository;
 
-import com.userregistration.model.UserModel;
+import user.registration.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.userregistration.exception;
+package user.registration.exception;
 
 public class DataAlreadyRegisteredException extends RuntimeException {
 

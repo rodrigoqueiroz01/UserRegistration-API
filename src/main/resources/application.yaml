@@ -18,9 +18,6 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
-service:
-  mock: false
-
 springdoc:
   api-docs:
     path: /api-documentation

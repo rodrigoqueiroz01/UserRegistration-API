@@ -1,13 +1,14 @@
-package com.userregistration.http.controller;
+package user.registration.http.controller;
 
-import com.userregistration.http.dto.request.UserRequest;
-import com.userregistration.http.dto.response.UserResponse;
-import com.userregistration.http.mapper.UserMapper;
-import com.userregistration.service.UserService;
+import user.registration.http.dto.request.UserRequest;
+import user.registration.http.dto.response.UserResponse;
+import user.registration.http.mapper.UserMapper;
+import user.registration.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
 import javax.validation.Valid;
 
 @RestController
