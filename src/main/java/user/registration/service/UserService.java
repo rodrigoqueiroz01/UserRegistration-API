@@ -8,7 +8,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
 import java.util.Objects;
 
 @Service
@@ -21,6 +20,7 @@ public class UserService {
         if (!Objects.isNull(userRepository.findByName(userModel.getName()))) {
             throw new DataAlreadyRegisteredException("Já existe usuário com esse nome!");
         }
+
         return userRepository.save(userModel);
     }
 
@@ -30,6 +30,7 @@ public class UserService {
         if (Objects.isNull(userModel)) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Login ou senha estão incorretas!");
         }
+
         return UserResponse
                 .builder()
                 .name(userModel.getName())
