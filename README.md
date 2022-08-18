@@ -10,5 +10,5 @@
 #### - Maven
 #### - Tomcat
 #### - Swagger UI
-#### - Postman (Collection)
+#### - Postman
 #### - IntelliJ IDEA
