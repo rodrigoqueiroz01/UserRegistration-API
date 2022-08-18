@@ -1,5 +1,6 @@
 package user.registration.http.controller;
 
+import user.registration.http.dto.request.LoginRequest;
 import user.registration.http.dto.request.UserRequest;
 import user.registration.http.dto.response.UserResponse;
 import user.registration.http.mapper.UserMapper;
@@ -25,10 +26,9 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<UserResponse> login(@RequestParam(value = "login", required = true) String login,
-                                              @RequestParam(value = "password", required = true) String password) {
+    public ResponseEntity<UserResponse> login(@Valid @RequestBody LoginRequest loginRequest) {
         return ResponseEntity.ok()
-                .body(userService.findByLoginAndPassword(login, password));
+                .body(userService.findByLoginAndPassword(loginRequest.getLogin(), loginRequest.getPassword()));
     }
 
 }

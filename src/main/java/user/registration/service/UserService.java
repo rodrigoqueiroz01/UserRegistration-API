@@ -33,6 +33,7 @@ public class UserService {
 
         return UserResponse
                 .builder()
+                .id(userModel.getId())
                 .name(userModel.getName())
                 .login(userModel.getLogin())
                 .password(userModel.getPassword())
